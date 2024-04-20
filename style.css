@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+.file{
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 1px 1px 1px 1px;
+
+    max-width: fit-content;
+    
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,.1), inset 0 -1px 0 rgba(0,0,0,.07);
+    break-after: always;
+}
+#file-name{
+    left: 30px;
+    flex-grow: 1;
+    border-width: 1px 1px 1px 1px;
+    background-clip: padding-box;
+    width: fit-content;
+    position: relative;
+    align-content: center;
+    height:50px;
+}
+#file-image{
+    float: left;
+    width: 7%;
+    height: 7%;
+    border-width: 1px 5px 1px 10px;
+    background-clip: padding-box;
+}
+.container{
+    background-color: #fff;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+    margin-bottom: 50px;
+}
+
+
+.options{
+    top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+button{
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    color: #020929;
+    cursor: pointer;
+}
+
+select{
+    padding: 7px;
+    border: 1px solid #020929;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.options label,
+.options select{
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="color"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #020929;
+}
+
+input[type="color"]::-moz-color-swatch{
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #020929;
+}
+
+#text-input{
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    height: 100vh;
+}
+
+.active{
+    background-color: #e0e9ff;
+}
